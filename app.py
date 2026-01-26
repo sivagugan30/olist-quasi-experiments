@@ -41,6 +41,12 @@ def load_data():
     import sys
     sys.path.insert(0, str(Path(__file__).parent))
     
+    # Try to load from processed parquet first (for Streamlit Cloud)
+    parquet_path = Path(__file__).parent / "data" / "processed" / "analysis_dataset.parquet"
+    if parquet_path.exists():
+        return pd.read_parquet(parquet_path)
+    
+    # Fall back to creating from raw data
     from src.data import load_all_tables, create_analysis_dataset
     tables = load_all_tables()
     df = create_analysis_dataset(tables)
