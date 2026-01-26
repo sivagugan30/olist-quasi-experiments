@@ -36,8 +36,8 @@ data/raw/*.csv
 data/raw/*.zip
 data/raw/olist_*
 
-# Processed data (regenerate via scripts)
-data/processed/*.parquet
+# Processed data - keep parquet for Streamlit deployment
+# data/processed/*.parquet
 data/processed/*.csv
 data/processed/*.pkl
 
