@@ -1,0 +1,152 @@
+{
+  "deadline_rd": {
+    "analysis": "Deadline RD",
+    "description": "Effect of late delivery on review scores",
+    "main_estimate": {
+      "estimate": 0.03051107360281753,
+      "se": 0.11896568454954755,
+      "ci_low": -0.20265738351044882,
+      "ci_high": 0.2636795307160839,
+      "pvalue": 0.7975883027318817,
+      "bandwidth": 1.2916745470816675,
+      "n_left": 2368,
+      "n_right": 1375,
+      "n_effective": 3743,
+      "method": "local_polynomial",
+      "polynomial_order": 1,
+      "kernel": "triangular"
+    },
+    "mccrary_test": {
+      "discontinuity": -0.01211257660864883,
+      "pvalue": 0.0,
+      "interpretation": "Evidence of manipulation"
+    },
+    "data_summary": {
+      "n_total": 95824,
+      "n_on_time": 88163,
+      "n_late": 7661,
+      "pct_late": 0.07994865586909333,
+      "raw_difference": -1.7287267011087408
+    }
+  },
+  "truckers_strike_did": {
+    "analysis": "Truckers Strike DiD",
+    "description": "Effect of 2018 truckers strike on delivery times",
+    "strike_start": "2018-05-21",
+    "strike_end": "2018-06-02",
+    "affected_states": [
+      "SP",
+      "MG",
+      "PR",
+      "SC",
+      "RS",
+      "RJ",
+      "GO",
+      "MT",
+      "MS"
+    ],
+    "main_estimate": {
+      "estimate": 2.3015658146108424,
+      "se": 0.20754214025423534,
+      "ci_low": 1.8947906944381807,
+      "ci_high": 2.708340934783504,
+      "pvalue": 1.4086715988863233e-28,
+      "n_treatment_pre": 27720,
+      "n_treatment_post": 17174,
+      "n_control_pre": 4804,
+      "n_control_post": 2916,
+      "n_total": 52614,
+      "method": "simple_did",
+      "covariates": null
+    },
+    "estimate_with_covariates": {
+      "estimate": 2.428529322147055,
+      "se": 0.2076114683174322,
+      "ci_low": 2.0216183214674093,
+      "ci_high": 2.8354403228267007,
+      "pvalue": 1.3130723721803968e-31,
+      "n_treatment_pre": 27720,
+      "n_treatment_post": 17174,
+      "n_control_pre": 4804,
+      "n_control_post": 2916,
+      "n_total": 52614,
+      "method": "did_with_covariates",
+      "covariates": [
+        "total_price",
+        "total_freight"
+      ]
+    },
+    "cancellation_effect": {
+      "estimate": 0.0027545316915137796,
+      "se": 0.0016228350203022263,
+      "ci_low": -0.00042616650112891133,
+      "ci_high": 0.0059352298841564705,
+      "pvalue": 0.08962903437485399,
+      "n_treatment_pre": 28260,
+      "n_treatment_post": 17446,
+      "n_control_pre": 4989,
+      "n_control_post": 2969,
+      "n_total": 53664,
+      "method": "simple_did",
+      "covariates": null
+    },
+    "data_summary": {
+      "n_total": 52614,
+      "n_treated": 44894,
+      "n_control": 7720,
+      "raw_did": 2.3015658146111857
+    }
+  },
+  "shipping_threshold_rd": {
+    "analysis": "Shipping Threshold Fuzzy RD",
+    "description": "Effect of free shipping threshold on order characteristics",
+    "threshold": 99,
+    "bandwidth": 50,
+    "freight_rd": {
+      "estimate": 0.3803155003387916,
+      "se": 0.8804214120942594,
+      "ci_low": -1.345278758583854,
+      "ci_high": 2.1059097592614373,
+      "pvalue": 0.6657633304538286,
+      "bandwidth": 2.858783321801477,
+      "n_left": 801,
+      "n_right": 3231,
+      "n_effective": 4032,
+      "method": "local_polynomial",
+      "polynomial_order": 1,
+      "kernel": "triangular"
+    },
+    "items_rd": {
+      "estimate": -0.16552396900974894,
+      "se": 0.04179164915778811,
+      "ci_low": -0.24743409621354734,
+      "ci_high": -0.08361384180595056,
+      "pvalue": 7.473198796814629e-05,
+      "bandwidth": 2.858783321801477,
+      "n_left": 801,
+      "n_right": 3231,
+      "n_effective": 4032,
+      "method": "local_polynomial",
+      "polynomial_order": 1,
+      "kernel": "triangular"
+    },
+    "mccrary_test": {
+      "discontinuity": 0.014040857222504024,
+      "pvalue": 0.006002131009277933
+    },
+    "bunching": {
+      "just_above": 5038,
+      "just_below": 4722,
+      "excess_mass": 316,
+      "bunching_ratio": 1.0669207962727658
+    },
+    "data_summary": {
+      "n_window": 46068,
+      "n_below": 27886,
+      "n_above": 18182
+    }
+  },
+  "installments_iv": {
+    "error": "'payment_installments'"
+  }
+}

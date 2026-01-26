@@ -1,0 +1,72 @@
+# Virtual Environment
+.venv/
+venv/
+env/
+olist-qe/
+*.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# Raw data (download via script)
+data/raw/*.csv
+data/raw/*.zip
+data/raw/olist_*
+
+# Processed data (regenerate via scripts)
+data/processed/*.parquet
+data/processed/*.csv
+data/processed/*.pkl
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.local
+
+# Kaggle credentials (should be in ~/.kaggle/)
+kaggle.json
+
+# Logs
+*.log
+logs/
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# mypy
+.mypy_cache/

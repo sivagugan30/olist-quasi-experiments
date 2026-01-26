@@ -1,0 +1,68 @@
+{
+  "analysis": "Truckers Strike DiD",
+  "description": "Effect of 2018 truckers strike on delivery times",
+  "strike_start": "2018-05-21",
+  "strike_end": "2018-06-02",
+  "affected_states": [
+    "SP",
+    "MG",
+    "PR",
+    "SC",
+    "RS",
+    "RJ",
+    "GO",
+    "MT",
+    "MS"
+  ],
+  "main_estimate": {
+    "estimate": 2.3015658146108424,
+    "se": 0.20754214025423534,
+    "ci_low": 1.8947906944381807,
+    "ci_high": 2.708340934783504,
+    "pvalue": 1.4086715988863233e-28,
+    "n_treatment_pre": 27720,
+    "n_treatment_post": 17174,
+    "n_control_pre": 4804,
+    "n_control_post": 2916,
+    "n_total": 52614,
+    "method": "simple_did",
+    "covariates": null
+  },
+  "estimate_with_covariates": {
+    "estimate": 2.428529322147055,
+    "se": 0.2076114683174322,
+    "ci_low": 2.0216183214674093,
+    "ci_high": 2.8354403228267007,
+    "pvalue": 1.3130723721803968e-31,
+    "n_treatment_pre": 27720,
+    "n_treatment_post": 17174,
+    "n_control_pre": 4804,
+    "n_control_post": 2916,
+    "n_total": 52614,
+    "method": "did_with_covariates",
+    "covariates": [
+      "total_price",
+      "total_freight"
+    ]
+  },
+  "cancellation_effect": {
+    "estimate": 0.0027545316915137796,
+    "se": 0.0016228350203022263,
+    "ci_low": -0.00042616650112891133,
+    "ci_high": 0.0059352298841564705,
+    "pvalue": 0.08962903437485399,
+    "n_treatment_pre": 28260,
+    "n_treatment_post": 17446,
+    "n_control_pre": 4989,
+    "n_control_post": 2969,
+    "n_total": 53664,
+    "method": "simple_did",
+    "covariates": null
+  },
+  "data_summary": {
+    "n_total": 52614,
+    "n_treated": 44894,
+    "n_control": 7720,
+    "raw_did": 2.3015658146111857
+  }
+}

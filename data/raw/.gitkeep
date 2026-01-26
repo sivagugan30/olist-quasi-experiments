@@ -1,0 +1,3 @@
+# Raw data directory
+# Data is downloaded via: make download
+# Or: python -m src.data.download

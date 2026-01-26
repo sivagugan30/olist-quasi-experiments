@@ -1,0 +1,49 @@
+{
+  "analysis": "Shipping Threshold Fuzzy RD",
+  "description": "Effect of free shipping threshold on order characteristics",
+  "threshold": 99,
+  "bandwidth": 50,
+  "freight_rd": {
+    "estimate": 0.3803155003387916,
+    "se": 0.8804214120942594,
+    "ci_low": -1.345278758583854,
+    "ci_high": 2.1059097592614373,
+    "pvalue": 0.6657633304538286,
+    "bandwidth": 2.858783321801477,
+    "n_left": 801,
+    "n_right": 3231,
+    "n_effective": 4032,
+    "method": "local_polynomial",
+    "polynomial_order": 1,
+    "kernel": "triangular"
+  },
+  "items_rd": {
+    "estimate": -0.16552396900974894,
+    "se": 0.04179164915778811,
+    "ci_low": -0.24743409621354734,
+    "ci_high": -0.08361384180595056,
+    "pvalue": 7.473198796814629e-05,
+    "bandwidth": 2.858783321801477,
+    "n_left": 801,
+    "n_right": 3231,
+    "n_effective": 4032,
+    "method": "local_polynomial",
+    "polynomial_order": 1,
+    "kernel": "triangular"
+  },
+  "mccrary_test": {
+    "discontinuity": 0.014040857222504024,
+    "pvalue": 0.006002131009277933
+  },
+  "bunching": {
+    "just_above": 5038,
+    "just_below": 4722,
+    "excess_mass": 316,
+    "bunching_ratio": 1.0669207962727658
+  },
+  "data_summary": {
+    "n_window": 46068,
+    "n_below": 27886,
+    "n_above": 18182
+  }
+}

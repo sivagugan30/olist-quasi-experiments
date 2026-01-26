@@ -1,0 +1,30 @@
+{
+  "analysis": "Deadline RD",
+  "description": "Effect of late delivery on review scores",
+  "main_estimate": {
+    "estimate": 0.03051107360281753,
+    "se": 0.11896568454954755,
+    "ci_low": -0.20265738351044882,
+    "ci_high": 0.2636795307160839,
+    "pvalue": 0.7975883027318817,
+    "bandwidth": 1.2916745470816675,
+    "n_left": 2368,
+    "n_right": 1375,
+    "n_effective": 3743,
+    "method": "local_polynomial",
+    "polynomial_order": 1,
+    "kernel": "triangular"
+  },
+  "mccrary_test": {
+    "discontinuity": -0.01211257660864883,
+    "pvalue": 0.0,
+    "interpretation": "Evidence of manipulation"
+  },
+  "data_summary": {
+    "n_total": 95824,
+    "n_on_time": 88163,
+    "n_late": 7661,
+    "pct_late": 0.07994865586909333,
+    "raw_difference": -1.7287267011087408
+  }
+}

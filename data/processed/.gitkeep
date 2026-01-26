@@ -1,0 +1,2 @@
+# Processed data directory
+# Parquet files are generated via: make data
