@@ -63,6 +63,11 @@
     "n_total": 52614,
     "n_treated": 44894,
     "n_control": 7720,
-    "raw_did": 2.3015658146111857
+    "raw_did": 2.3015658146111857,
+    "control_pre": 20.636709115378387,
+    "control_post": 13.695450658563226,
+    "treated_pre": 12.66418905406579,
+    "treated_post": 8.024496411861815,
+    "counterfactual": 5.722930597250629
   }
 }
