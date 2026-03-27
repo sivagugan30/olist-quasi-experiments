@@ -70,3 +70,6 @@ htmlcov/
 
 # mypy
 .mypy_cache/
+
+# Personal templates
+streamlit_template.md
